@@ -5,6 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
+    {/* desktop navbar */}
       <div className="md:flex justify-between p-6 h-14 shadow-md items-center hidden">
         <header>
           <h1 className="text-2xl font-semibold">Resale.Bd</h1>
