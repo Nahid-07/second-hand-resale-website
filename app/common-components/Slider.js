@@ -10,14 +10,14 @@ import sliderImg3 from "../../public/mobile3.jpg";
 const Slider = () => {
   SwiperCore.use([Autoplay]);
   return (
-    <div className="flex mx-auto max-w-[100rem]">
+    <div className="bg-black">
+        <div className="flex mx-auto max-w-[100rem] ">
       <Swiper
         slidesPerView={1}
         loop={true}
         autoplay={{
           delay: 3000,
         }}
-        className="rounded-lg"
       >
         <SwiperSlide>
           <Image src={sliderImg1}></Image>
@@ -29,6 +29,7 @@ const Slider = () => {
           <Image src={sliderImg3}></Image>
         </SwiperSlide>
       </Swiper>
+    </div>
     </div>
   );
 };
