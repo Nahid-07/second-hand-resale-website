@@ -1,6 +1,6 @@
 const CategoryOfProducts = () => {
   return (
-    <div className="max-w-7xl md:flex mx-auto gap-5 px-3 my-10">
+    <div className="md:flex gap-5 my-16">
       <div className="max-w-lg p-4 shadow-md dark:bg-gray-900 dark:text-gray-100">
         <div className="space-y-4">
           <div className="space-y-2">
