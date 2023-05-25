@@ -4,30 +4,31 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const animationClass = "transition ease-in-out hover:scale-110 duration-150"
   return (
     <>
       {/* desktop navbar */}
       <div className="md:flex justify-between p-6 h-14 shadow-md items-center hidden">
         <header>
-          <h1 className="text-2xl font-semibold">Resale.Bd</h1>
+          <h1 className="text-2xl font-semibold text-white">Resale.Bd</h1>
         </header>
         <nav>
           <div>
-            <ul className="flex space-x-6 text-lg">
+            <ul className="flex space-x-6 text-lg text-white">
               <Link href="/">
-                <li>Home</li>
+                <li className={`${animationClass}`}>Home</li>
               </Link>
               <Link href="/dashbord">
-                <li>Dashboard</li>
+                <li className={`${animationClass}`}>Dashboard</li>
               </Link>
               <Link href="/blog">
-                <li>Blog</li>
+                <li className={`${animationClass}`}>Blog</li>
               </Link>
               <Link href="/SignIn">
-                <li>Log in</li>
+                <li className={`${animationClass}`}>Log in</li>
               </Link>
               <Link href="/">
-                <li>Log out</li>
+                <li className={`${animationClass}`}>Log out</li>
               </Link>
             </ul>
           </div>
@@ -37,7 +38,7 @@ const Navbar = () => {
       {/* navbar for mobile device */}
 
       <div className="p-6 flex md:hidden justify-between h-10 shadow-md items-center">
-        <header>Resale.Bd</header>
+        <header className="text-white">Resale.Bd</header>
         {/* tap and show menu icon */}
         <div onClick={() => setOpen(!open)}>
           <RxHamburgerMenu />
@@ -45,21 +46,21 @@ const Navbar = () => {
       </div>
 
       <nav className={`${open ? "block" : "hidden"} bg-gray-100 `}>
-        <ul className="p-6 space-y-4">
+        <ul className="p-6 space-y-4 text-white">
           <Link href="/">
-            <li>Home</li>
+            <li className={`${animationClass}`}>Home</li>
           </Link>
           <Link href="/dashbord">
-            <li>Dashboard</li>
+            <li className={`${animationClass}`}>Dashboard</li>
           </Link>
           <Link href="/blog">
-            <li>Blog</li>
+            <li className={`${animationClass}`}>Blog</li>
           </Link>
           <Link href="/SignIn">
-            <li>Log in</li>
+            <li className={`${animationClass}`}>Log in</li>
           </Link>
           <Link href="/">
-            <li>Log out</li>
+            <li className={`${animationClass}`}>Log out</li>
           </Link>
         </ul>
       </nav>

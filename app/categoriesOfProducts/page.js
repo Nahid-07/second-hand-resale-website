@@ -1,7 +1,7 @@
 const CategoryOfProducts = () => {
   return (
-    <div className="md:flex gap-5 my-16">
-      <div className="max-w-lg p-4 shadow-md dark:bg-gray-900 dark:text-gray-100">
+    <div className="md:flex gap-5 my-16 space-y-6 md:space-y-0">
+      <div className="max-w-lg p-4 shadow-md bg-gray-100 rounded-md">
         <div className="space-y-4">
           <div className="space-y-2">
             <img
@@ -16,13 +16,13 @@ const CategoryOfProducts = () => {
                 Facere ipsa nulla corrupti praesentium pariatur architecto
               </h3>
             </a>
-            <button className="bg-slate-500 w-full p-3 rounded-md text-white">
+            <button className="bg-indigo-500 w-full p-3 rounded-md text-white">
               See more
             </button>
           </div>
         </div>
       </div>
-      <div className="max-w-lg p-4 shadow-md dark:bg-gray-900 dark:text-gray-100">
+      <div className="max-w-lg p-4 shadow-md bg-gray-100 rounded-md">
         <div className="space-y-4">
           <div className="space-y-2">
             <img
@@ -37,13 +37,13 @@ const CategoryOfProducts = () => {
                 Facere ipsa nulla corrupti praesentium pariatur architecto
               </h3>
             </a>
-            <button className="bg-slate-500 w-full p-3 rounded-md text-white">
+            <button className="bg-indigo-500 w-full p-3 rounded-md text-white">
               See more
             </button>
           </div>
         </div>
       </div>
-      <div className="max-w-lg p-4 shadow-md dark:bg-gray-900 dark:text-gray-100">
+      <div className="max-w-lg p-4 shadow-md bg-gray-100 rounded-md">
         <div className="space-y-4">
           <div className="space-y-2">
             <img
@@ -58,7 +58,7 @@ const CategoryOfProducts = () => {
                 Facere ipsa nulla corrupti praesentium pariatur architecto
               </h3>
             </a>
-            <button className="bg-slate-500 w-full p-3 rounded-md text-white">
+            <button className="bg-indigo-500 w-full p-3 rounded-md text-white">
               See more
             </button>
           </div>
