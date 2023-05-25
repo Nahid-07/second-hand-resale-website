@@ -10,7 +10,7 @@ const Navbar = () => {
       {/* desktop navbar */}
       <div className="md:flex justify-between p-6 h-14 shadow-md items-center hidden bg-black sticky top-0 z-50">
         <header>
-          <h1 className="text-2xl font-semibold text-white">Resale.Bd</h1>
+          <h1 className="text-2xl font-semibold text-white font-bold">Resale.Bd</h1>
         </header>
         <nav>
           <div>
@@ -37,15 +37,15 @@ const Navbar = () => {
 
       {/* navbar for mobile device */}
 
-      <div className="p-6 flex md:hidden justify-between h-10 shadow-md items-center">
-        <header className="text-white">Resale.Bd</header>
+      <div className="p-6 flex md:hidden justify-between h-10 shadow-md items-center bg-black">
+        <header className="text-white font-bold">Resale.Bd</header>
         {/* tap and show menu icon */}
         <div onClick={() => setOpen(!open)}>
-          <RxHamburgerMenu />
+          <RxHamburgerMenu className="text-white font-extrabold"/>
         </div>
       </div>
 
-      <nav className={`${open ? "block" : "hidden"} bg-gray-100 `}>
+      <nav className={`${open ? "block" : "hidden"} bg-indigo-950 `}>
         <ul className="p-6 space-y-4 text-white">
           <Link href="/">
             <li className={`${animationClass}`}>Home</li>
