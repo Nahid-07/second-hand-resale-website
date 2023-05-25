@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       {/* desktop navbar */}
-      <div className="md:flex justify-between p-6 h-14 shadow-md items-center hidden">
+      <div className="md:flex justify-between p-6 h-14 shadow-md items-center hidden bg-black sticky top-0 z-50">
         <header>
           <h1 className="text-2xl font-semibold text-white">Resale.Bd</h1>
         </header>
