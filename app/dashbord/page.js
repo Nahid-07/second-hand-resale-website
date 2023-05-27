@@ -1,9 +1,7 @@
-
-
 const DashbordPage = () => {
     return (
         <div>
-            
+
         </div>
     );
 };
