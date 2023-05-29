@@ -16,19 +16,19 @@ const Navbar = () => {
           <div>
             <ul className="flex space-x-6 text-lg text-white">
               <Link href="/">
-                <li className={`${animationClass}`}>Home</li>
+                <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Home</li>
               </Link>
               <Link href="/dashbord">
-                <li className={`${animationClass}`}>Dashboard</li>
+                <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Dashboard</li>
               </Link>
               <Link href="/blog">
-                <li className={`${animationClass}`}>Blog</li>
+                <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Blog</li>
               </Link>
               <Link href="/SignIn">
-                <li className={`${animationClass}`}>Log in</li>
+                <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Log in</li>
               </Link>
               <Link href="/">
-                <li className={`${animationClass}`}>Log out</li>
+                <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Log out</li>
               </Link>
             </ul>
           </div>
@@ -48,19 +48,19 @@ const Navbar = () => {
       <nav className={`${open ? "block" : "hidden"} bg-indigo-950 `}>
         <ul className="p-6 space-y-4 text-white">
           <Link href="/">
-            <li className={`${animationClass}`}>Home</li>
+            <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Home</li>
           </Link>
           <Link href="/dashbord">
-            <li className={`${animationClass}`}>Dashboard</li>
+            <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Dashboard</li>
           </Link>
           <Link href="/blog">
-            <li className={`${animationClass}`}>Blog</li>
+            <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Blog</li>
           </Link>
           <Link href="/SignIn">
-            <li className={`${animationClass}`}>Log in</li>
+            <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Log in</li>
           </Link>
           <Link href="/">
-            <li className={`${animationClass}`}>Log out</li>
+            <li className={`${animationClass} hover:bg-indigo-500 px-3 rounded`}>Log out</li>
           </Link>
         </ul>
       </nav>
